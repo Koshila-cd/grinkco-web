@@ -1,6 +1,6 @@
 <div class="section section-buttons">
     <div class="container">
-        <div class="tim-title">
+        <!-- <div class="tim-title">
             <h2>Basic Components</h2>
         </div>
         <div id="buttons">
@@ -185,6 +185,52 @@
                 <br>
                 <nouislider class="slider slider-info" [connect]="true" [min]="0" [max]="100" [step]="1" [(ngModel)]="doubleSlider" [tooltips]="false"></nouislider>
             </div>
+        </div> -->
+
+        <div class="section" id="carousel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="tim-title">
+                            <h3 class="text-warning">SUCCESS STORIES</h3>
+                        </div>
+                        <h6>
+                            We’re hard at work at the intersection of how business works and what clients need.
+                        </h6>
+                        <p>
+                            We support over 200 of the world's leading brands by providing solutions that utilize cutting-edge technologies to help them
+                            work smarter and at lower cost across the full spectrum of their operations.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <!-- <div class="col-md-8 mr-auto ml-auto"> -->
+                        <div class="card page-carousel">
+                            <ngb-carousel>
+                                <ng-template ngbSlide>
+                                    <img src="../assets/img/soroush-karimi.jpg" alt="Random first slide">
+                                    <div class="carousel-caption">
+                                        <p>Somewhere</p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="../assets/img/federico-beccari.jpg" alt="Random second slide">
+                                    <div class="carousel-caption">
+                                        <p>Somewhere else</p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="../assets/img/joshua-stannard.jpg" alt="Random third slide">
+                                    <div class="carousel-caption">
+                                        <p>Here it is</p>
+                                    </div>
+                                </ng-template>
+                            </ngb-carousel>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     </div>
 </div>
